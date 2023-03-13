@@ -66,6 +66,7 @@
 						processData: false,
 						success: function(data) {
 							console.log("success" + data);
+							alert(data.output.completeTrackResults[0].trackResults[0].error.message);
 						},
 						error: function(e) {
 							console.log("error: " + e);
