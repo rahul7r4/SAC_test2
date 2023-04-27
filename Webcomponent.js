@@ -26,10 +26,9 @@
 
         fireChanged() {
             console.log("OnClick Triggered");     
+	function sendSelectedOption() {
             var selectedOption = document.querySelector('input[name="option"]:checked').value;
-		console.log("selectedOption"); 
-
-
+		console.log("selectedOption"); }
            
         }        
         
