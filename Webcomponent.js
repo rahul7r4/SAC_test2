@@ -1,7 +1,14 @@
+var selection = "BASE";
+
 function getSelectedOption(sel) {
-    console.log(sel.options[sel.selectedIndex].text);
+    //console.log(sel.options[sel.selectedIndex].value);
     //var selectedOption = document.querySelector('input[name="option"]:checked').value;
-    console.log("Trig"); 
+    selection = sel.options[sel.selectedIndex].value
+    console.log(selection); 
+}
+
+function commitSelectedOption() {
+    console.log("Commit:" + selection); 
 }
 
 (function () {
@@ -12,7 +19,7 @@ function getSelectedOption(sel) {
   <option value="BASE">BASE</option>
   <option value="SCEN1">SCEN1</option>
 </select>
-<button type="button" id="myBtn" onclick="getSelectedOption()">Commit Version</button>
+<button type="button" id="myBtn" onclick="commitSelectedOption()">Commit Version</button>
 ` ;   
 
     class PerformanceHelp extends HTMLElement {
