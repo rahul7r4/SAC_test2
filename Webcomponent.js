@@ -4,7 +4,7 @@
     `
 <input type="radio" name="option" value="BASE" checked>BASE
 <input type="radio" name="option" value="SCEN1">SCEN1
-<button type="button" id="myBtn" onclick="getSelectedOption()>Commit Version</button>
+<button type="button" id="myBtn">Commit Version</button>
 ` ;   
    
     class PerformanceHelp extends HTMLElement {
