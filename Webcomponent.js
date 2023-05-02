@@ -13,11 +13,6 @@ function getSelectedOption() {
 <button type="button" id="myBtn" onclick="getSelectedOption()">Commit Version</button>
 ` ;   
 
-	const el = document.getElementById("myBtn");
-	el.addEventListener("click", event => {
-	        console.log("Triggered1")});
-
-
     class PerformanceHelp extends HTMLElement {
         constructor() {
             super();
@@ -35,7 +30,9 @@ function getSelectedOption() {
         }
 
 	fireChanged() {
-            console.log("OnClick Triggered");}
+            console.log("OnClick Triggered");
+	    const el = document.getElementById("myBtn");
+	    console.log("el");}
 
     }
 
