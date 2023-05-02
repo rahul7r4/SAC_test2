@@ -15,9 +15,7 @@ function getSelectedOption() {
 
 	const el = document.getElementById("myBtn");
 	el.addEventListener("click", event => {
-	        console.log("Triggered1")
-    		var selectedOption = document.querySelector('input[name="option"]:checked').value;
-   		console.log("selectedOption"); });
+	        console.log("Triggered1")});
 
 
     class PerformanceHelp extends HTMLElement {
