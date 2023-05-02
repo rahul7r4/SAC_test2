@@ -1,15 +1,17 @@
-function getSelectedOption() {
-    console.log("Triggered");
-    var selectedOption = document.querySelector('input[name="option"]:checked').value;
-    console.log("selectedOption"); 
+function getSelectedOption(sel) {
+    console.log(sel.options[sel.selectedIndex].text);
+    //var selectedOption = document.querySelector('input[name="option"]:checked').value;
+    console.log("Trig"); 
 }
 
 (function () {
     let tmpl = document.createElement('template');
     tmpl.innerHTML = 
     `
-<input type="radio" name="option" value="BASE" checked>BASE
-<input type="radio" name="option" value="SCEN1">SCEN1
+<select id="box1" onChange="getSelectedOption(this);">
+  <option value="BASE">BASE</option>
+  <option value="SCEN1">SCEN1</option>
+</select>
 <button type="button" id="myBtn" onclick="getSelectedOption()">Commit Version</button>
 ` ;   
 
@@ -31,8 +33,8 @@ function getSelectedOption() {
 
 	fireChanged() {
             console.log("OnClick Triggered");
-	    const el = document.getElementById("myBtn");
-	    console.log("el");}
+	    //const el = document.getElementById("myBtn");
+	    //console.log("el");}
 
     }
 
