@@ -34,7 +34,8 @@ function getSelectedOption(sel) {
 	fireChanged() {
             console.log("OnClick Triggered");
 	    //const el = document.getElementById("myBtn");
-	    //console.log("el");}
+	    //console.log("el");
+	}
 
     }
 
